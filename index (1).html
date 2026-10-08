@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch họp công ty</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #333;
+        padding: 8px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lịch họp công ty</h1>
+
+    <table>
+      <tr>
+        <th>Ngày</th>
+        <th>Giờ</th>
+        <th>Nội dung cuộc họp</th>
+      </tr>
+
+      <!-- Thứ Hai: 3 cuộc họp, ô Ngày gộp 3 hàng -->
+      <tr>
+        <td rowspan="3">Thứ Hai, 12/10/2026</td>
+        <td>08:30 - 09:30</td>
+        <td>Họp giao ban đầu tuần</td>
+      </tr>
+      <tr>
+        <td>10:00 - 11:30</td>
+        <td>Họp kế hoạch kinh doanh quý IV</td>
+      </tr>
+      <tr>
+        <td>14:00 - 15:30</td>
+        <td>Họp đánh giá tiến độ dự án</td>
+      </tr>
+
+      <!-- Thứ Tư: 2 cuộc họp, ô Ngày gộp 2 hàng -->
+      <tr>
+        <td rowspan="2">Thứ Tư, 14/10/2026</td>
+        <td>09:00 - 10:30</td>
+        <td>Họp phòng Nhân sự</td>
+      </tr>
+      <tr>
+        <td>14:00 - 16:00</td>
+        <td>Đào tạo kỹ năng làm việc nhóm</td>
+      </tr>
+
+      <!-- Thứ Sáu: họp cả ngày, ô nội dung gộp 2 cột (Giờ + Nội dung) -->
+      <tr>
+        <td>Thứ Sáu, 16/10/2026</td>
+        <td colspan="2">
+          Cả ngày (08:00 - 17:00): Hội nghị tổng kết quý III toàn công ty
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
